@@ -154,7 +154,7 @@ namespace WindowsFormsApplication2
 
         public double Min()
         {
-            double min = 0;
+            double min = this.Vecteur.ElementAt(0);
             for (int i = 0; i < taille; i++)
             {
                 if (min > this.Vecteur.ElementAt(i))
@@ -164,6 +164,12 @@ namespace WindowsFormsApplication2
             }
 
             return min;
+        }
+
+        public Boolean Equal (Vector v)
+        {
+            if (v.taille == this.taille) { return true; }
+            else { return false; }
         }
     }
 }

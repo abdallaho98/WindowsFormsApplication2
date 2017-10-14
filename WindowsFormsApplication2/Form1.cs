@@ -73,7 +73,7 @@ namespace WindowsFormsApplication2
             {
                 V.initiate(Textbox1);
                 max = V.Max();
-                min = V.Vecteur.Min();
+                min = V.Min();
                 textBox2.Text = "MAX :" + max + " MIN :" + min;
             }
             catch (VectorNullException nil) { MessageBox.Show(nil.Message); }
